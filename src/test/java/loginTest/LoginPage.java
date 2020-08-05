@@ -3,21 +3,29 @@ package loginTest;
 
 import base.ScriptBase;
 import controller.LoginPageController;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class LoginPage extends ScriptBase {
-LoginPageController loginController;
+LoginPageController loginPageController;
     @Test
     public void verifyWebsideOpen(){
-loginController = new LoginPageController(driver);
+loginPageController = new LoginPageController(driver);
         init();
-        loginController.signinButton(driver);
+      // loginPageController.signinButton(driver);
     }
     @Test
     public void verifyWebsideOpen2(){
 
         init();
+    }
+    @Test
+    public void verifyLogin(){
+        init();
+        loginPageController = new LoginPageController(driver);
+
+        loginPageController.logIn();
     }
     @AfterTest
     public void afterTest(){
