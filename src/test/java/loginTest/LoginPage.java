@@ -20,7 +20,7 @@ loginController = new LoginPageController(driver);
         loginController.signinButton(driver);
     }
     @Test
-    public void verifyLogin(){
+    public void verifyLogin() throws InterruptedException {
         loginController = new LoginPageController(driver);
        loginController.logIn();
     }
