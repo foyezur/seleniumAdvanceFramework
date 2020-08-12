@@ -3,29 +3,26 @@ package loginTest;
 
 import base.ScriptBase;
 import controller.LoginPageController;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class LoginPage extends ScriptBase {
-LoginPageController loginPageController;
-    @Test
-    public void verifyWebsideOpen(){
-loginPageController = new LoginPageController(driver);
-        init();
-      // loginPageController.signinButton(driver);
-    }
-    @Test
-    public void verifyWebsideOpen2(){
-
+LoginPageController loginController;
+    @BeforeTest
+    public void beforeTest(){
         init();
     }
     @Test
-    public void verifyLogin(){
-        init();
-        loginPageController = new LoginPageController(driver);
+    public void verifySigninButtonDisplayed(){
+loginController = new LoginPageController(driver);
 
-        loginPageController.logIn();
+        loginController.signinButton(driver);
+    }
+    @Test
+    public void verifyLogin() throws InterruptedException {
+        loginController = new LoginPageController(driver);
+       loginController.logIn();
     }
     @AfterTest
     public void afterTest(){
