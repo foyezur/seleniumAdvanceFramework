@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  thread-count="2" name="test" parallel="tests">
+
+<test name="login Test">
+    <parameter name="browser" value="chrome" />
+    <classes>
+        <class name="loginTest.LoginPage">
+            <methods>
+                <inclue name="verifySigninButtonDisplayed"></inclue>
+                <inclue name="verifyLogin"></inclue>
+                <inclue name="verifyInvalidLogin"></inclue>
+
+            </methods>
+        </class>
+        <class name="loginTest.LoginPage">
+                        <methods>
+                            <inclue name="verifySigninButtonDisplayed"></inclue>
+                            <inclue name="verifyLogin"></inclue>
+                            <inclue name="verifyInvalidLogin"></inclue>
+
+                        </methods>
+        </class>
+        <class name="controller.HomePageController">
+            <methods>
+                <inclue name="homepageloginButton"></inclue>
+            </methods>
+        </class>
+    </classes>
+</test>
+    <test name="login">
+            <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="loginTest.LoginPage">
+                            <methods>
+                                <inclue name="verifySigninButtonDisplayed"></inclue>
+                                <inclue name="verifyLogin"></inclue>
+                                <inclue name="verifyInvalidLogin"></inclue>
+
+                            </methods>
+            </class>
+            <class name="loginTest.LoginPage">
+                            <methods>
+                                <inclue name="verifySigninButtonDisplayed"></inclue>
+                                <inclue name="verifyLogin"></inclue>
+                                <inclue name="verifyInvalidLogin"></inclue>
+
+                            </methods>
+            </class>
+            <class name="controller.HomePageController">
+                <methods>
+                    <inclue name="homepageloginButton"></inclue>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -35,6 +35,7 @@ public class LoginPageController {
     Thread.sleep(500);
     authTab.isDisplayed();
     Assert.assertEquals(authTab,authTab);
+  // Assert.assertEquals(authTab,true);
 //    inputEmail.sendKeys("test@gmail.com");
 //    inputPass.sendKeys("1234qwer");
 //    signinButton.click();

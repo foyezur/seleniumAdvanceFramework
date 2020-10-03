@@ -9,10 +9,7 @@ import org.testng.annotations.Test;
 
 public class LoginPage extends ScriptBase {
 LoginPageController loginController;
-    @BeforeTest
-    public void beforeTest(){
-        init();
-    }
+
     @Test
     public void verifySigninButtonDisplayed(){
 loginController = new LoginPageController(driver);
@@ -84,7 +81,7 @@ loginController = new LoginPageController(driver);
     @AfterTest
     public void afterTest(){
         driver.close();
-        driver.quit();
+//        driver.quit();
     }
 }
 
