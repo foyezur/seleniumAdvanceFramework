@@ -12,10 +12,8 @@ public class HomePageController {
     public HomePageController(WebDriver driver){
         PageFactory.initElements(driver,this);
     }
-
-        public void loginButton(){
+        public void homepageloginButton(){
             signinButton.click();
-
         }
 
 }
