@@ -22,6 +22,10 @@ public class ScriptBase {
             System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver");
             driver = new FirefoxDriver();
             System.out.println("test with firefox: "+Thread.currentThread().getId());
+//        }else if(browser.equalsIgnoreCase("safari")){
+//            System.setProperty("webdriver.safari.driver", "./drivers/safaridriver");
+//            driver = new FirefoxDriver();
+//            System.out.println("test with safari: "+Thread.currentThread().getId());
         }
         driver.get("http://automationpractice.com/index.php");
     }
