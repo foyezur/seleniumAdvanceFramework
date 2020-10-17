@@ -17,7 +17,8 @@ public class FindDressesController {
     public FindDressesController(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
-public void CasualDressFound(){
+public void CasualDressFound() throws InterruptedException {
+        Thread.sleep(1000);
         dressButton.click();
         casualDress.click();
     Assert.assertEquals(productFoundButton,productFoundButton);

@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--<suite  thread-count="2" name="test" parallel="tests">-->
 <suite name="parallel_testing" parallel="methods" thread-count="2">
-<test name="login Test">
-    <parameter name="browser" value="chrome" />
-    <classes>
-        <class name="loginTest.LoginPage">
-            <methods>
-                <inclue name="verifySigninButtonDisplayed"></inclue>
-                <inclue name="verifyLogin"></inclue>
-                <inclue name="verifyInvalidLogin"></inclue>
-            </methods>
-        </class>
+<!--<test name="login Test">-->
+<!--    <parameter name="browser" value="safari" />-->
+<!--    <classes>-->
+<!--        <class name="loginTest.LoginPage">-->
+<!--            <methods>-->
+<!--                <inclue name="verifySigninButtonDisplayed"></inclue>-->
+<!--                <inclue name="verifyLogin"></inclue>-->
+<!--                <inclue name="verifyInvalidLogin"></inclue>-->
+<!--            </methods>-->
+<!--        </class>-->
 
-    </classes>
-</test>
-        <test name="homePagetest">
-        <parameter name="browser" value="firefox" />
-        <classes>
-        <class name="homePagetest.HomePage">
-            <methods>
-                <inclue name="homepageloginButton"></inclue>
-            </methods>
-        </class>
-        <class name="homePagetest.CataloguePageTest">
-            <methods>
-                <inclue name="verifyWomenCataloguePage"></inclue>
-                <inclue name="homePageCatalogue"></inclue>
-            </methods>
-        </class>
-        </classes>
-    </test>
-    <test name="login">
-            <parameter name="browser" value="firefox" />
-        <classes>
-            <class name="loginTest.LoginPage">
-                            <methods>
-                                <inclue name="verifySigninButtonDisplayed"></inclue>
-                                <inclue name="verifyLogin"></inclue>
-                                <inclue name="verifyInvalidLogin"></inclue>
+<!--    </classes>-->
+<!--</test>-->
+<!--        <test name="homePagetest">-->
+<!--        <parameter name="browser" value="firefox" />-->
+<!--        <classes>-->
+<!--        <class name="homePagetest.HomePage">-->
+<!--            <methods>-->
+<!--                <inclue name="homepageloginButton"></inclue>-->
+<!--            </methods>-->
+<!--        </class>-->
+<!--        <class name="homePagetest.CataloguePageTest">-->
+<!--            <methods>-->
+<!--                <inclue name="verifyWomenCataloguePage"></inclue>-->
+<!--                <inclue name="verifyDressesCataloguePage"></inclue>-->
+<!--            </methods>-->
+<!--        </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="login">-->
+<!--            <parameter name="browser" value="firefox" />-->
+<!--        <classes>-->
+<!--            <class name="loginTest.LoginPage">-->
+<!--                            <methods>-->
+<!--                                <inclue name="verifySigninButtonDisplayed"></inclue>-->
+<!--                                <inclue name="verifyLogin"></inclue>-->
+<!--                                <inclue name="verifyInvalidLogin"></inclue>-->
 
-                            </methods>
-            </class>
-        </classes>
-    </test>
+<!--                            </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--<test name="login">-->
 <!--<parameter name="browser" value="safari" />-->
 <!--<classes>-->
@@ -51,7 +51,7 @@
 <!--            <inclue name="verifySigninButtonDisplayed"></inclue>-->
 <!--            <inclue name="verifyLogin"></inclue>-->
 <!--            <inclue name="verifyInvalidLogin"></inclue>-->
-    <!--        </methods>-->
+<!--            </methods>-->
 <!--    </class>-->
 <!--</classes>-->
 <!--</test>-->
@@ -67,7 +67,7 @@
 <!--        </classes>-->
 <!--    </test>-->
     <test name="search test">
-        <parameter name="browser" value="firefox" />
+        <parameter name="browser" value="opera" />
         <classes>
             <class name="searchTest.FindCasualItems">
                 <methods>
