@@ -9,7 +9,18 @@ public class SearchPageTest extends ScriptBase {
     @Test
     public void verifySearchTopItems() throws InterruptedException {
         searchController=new SearchController(driver);
-        searchController.searchItems();
+        searchController.searchItems("top");
     }
+    @Test
+    public void verifySearchCapItems() throws InterruptedException {
+        searchController=new SearchController(driver);
+        searchController.searchItems("Cap");
+    }
+    @Test
+    public void verifySearchDressItems() throws InterruptedException {
+        searchController=new SearchController(driver);
+        searchController.searchItems("Dress");
+    }
+
 
 }
