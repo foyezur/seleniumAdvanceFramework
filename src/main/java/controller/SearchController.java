@@ -15,11 +15,12 @@ public class SearchController {
     public SearchController(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
-public void searchItems() throws InterruptedException {
-        Thread.sleep(500);
+
+public void searchItems(String searchProduct) throws InterruptedException {
+        Thread.sleep(1000);
         searchTab.clear();
-        searchTab.sendKeys("top");
+        searchTab.sendKeys(searchProduct);
         searchSubmit.click();
-    Assert.assertEquals(searchTopResult,searchTopResult);
+//    Assert.assertEquals(searchTopResult,searchTopResult);
 }
 }

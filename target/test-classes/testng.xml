@@ -67,13 +67,34 @@
 <!--        </classes>-->
 <!--    </test>-->
     <test name="search test">
-        <parameter name="browser" value="opera" />
+        <parameter name="browser" value="firefox" />
         <classes>
-            <class name="searchTest.FindCasualItems">
+            <class name="searchTest.SearchPageTest">
                 <methods>
-                    <inclue name="CasualDressFound"></inclue>
+<!--                    <inclue name="CasualDressFound"></inclue>-->
                 </methods>
             </class>
         </classes>
     </test>
+<!--    <test name="Addcart test">-->
+<!--        <parameter name="browser" value="firefox" />-->
+<!--        <classes>-->
+<!--            <class name="addCartTest.AddCartPage">-->
+<!--                <methods>-->
+<!--&lt;!&ndash;                    <inclue name="verifyAddCartTest"></inclue>&ndash;&gt;-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="women test">-->
+<!--        <parameter name="browser" value="safari" />-->
+<!--        <classes>-->
+<!--            <class name="womenPageTest.WomenTest">-->
+<!--                <methods>-->
+<!--                    <inclue name="verifyWomenCatalogTest"></inclue>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
 </suite>
